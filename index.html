@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GVI Pharmacy - Your Health, Our Priority</title>
+  <link rel="stylesheet" href="output.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    html {
+  scroll-behavior: smooth;
+}
+    .nav-bg {
+      background: radial-gradient(circle, rgb(10 60 202) 0%, #042e52 100%);
+    }
+
+    .blue-bg {
+      background: radial-gradient(circle, rgb(10 60 202) 0%, #042e52 100%);
+    }
+
+    /* Custom styles for menu transition */
+    .bg-white-opacity-50 {
+      background-color: rgba(255, 255, 255, 0.5);
+    }
+
+    .transition-transform {
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .translate-x-full {
+      transform: translateX(100%);
+    }
+  </style>
+</head>
+
+<body class="font-sans antialiased text-gray-900">
+
+  <!-- Small Screen Menu -->
+  <nav class="block md:hidden bg-opacity-50 shadow-black shadow-2xl fixed top-0 left-0 w-full z-20 text-white">
+    <div class="container mx-auto flex items-center justify-between py-4 px-6">
+      <img src="gvi_digital2.png" alt="GVI Pharmacy Logo" class="h-12">
+      <div class="z-50 relative">
+        <button id="menu-toggle-sm" class="text-white focus:outline-none z-50 relative">
+          <svg id="menu-icon-sm" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+      <ul id="menu-sm"
+        class="fixed inset-0 bg-black bg-opacity-75 hidden lg:flex lg:items-center lg:space-x-6 space-y-6 lg:space-y-0 flex-col lg:flex-row justify-center items-center transition-transform transform translate-x-full lg:transform-none z-40 pl-12 pt-32">
+        <li><a href="#home" class="text-white text-xl hover:underline flex items-center"><i
+              class="fas fa-home mr-2"></i>Home</a></li>
+        <li><a href="#aboutus" class="text-white text-xl hover:underline flex items-center"><i
+              class="fas fa-info-circle mr-2"></i>About Us</a></li>
+        <li><a href="#services" class="text-white text-xl hover:underline flex items-center"><i
+              class="fas fa-cogs mr-2"></i>Services</a></li>
+        <li><a href="#products" class="text-white text-xl hover:underline flex items-center"><i
+              class="fas fa-box-open mr-2"></i>Products</a></li>
+        <li><a href="#contact" class="text-white text-xl hover:underline flex items-center"><i
+              class="fas fa-envelope mr-2"></i>Contact Us</a></li>
+        <li><a href="#blog" class="text-white text-xl hover:underline flex items-center"><i
+              class="fas fa-blog mr-2"></i>Blog</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Medium Screen Menu -->
+  <nav class="nav-item shadow-black shadow-2xl fixed top-0 left-0 w-full z-20 hidden md:block">
+    <div class="container mx-auto flex items-center justify-between py-4 px-6">
+      <span class="p-0 m-0">
+        <img src="gvi_digital2.png" alt="GVI Pharmacy" class="h-16">
+      </span>
+      <div class="hidden md:block">
+        <ul class="flex items-center space-x-6">
+          <li><a href="#home"
+              class="text-white text-lg pt-1 pb-2 px-3 rounded-full hover:bg-green-300 hover:bg-opacity-25  shadow-sm hover:shadow-green-300 hover:shadow-lg ">Home</a>
+          </li>
+          <li><a href="#aboutus"
+              class="text-white text-lg pt-1 pb-2 px-3 rounded-full hover:bg-green-300 hover:bg-opacity-25  shadow-sm hover:shadow-green-300 hover:shadow-lg ">About
+              Us</a></li>
+          <li><a href="#services"
+              class="text-white text-lg pt-1 pb-2 px-3 rounded-full hover:bg-green-300 hover:bg-opacity-25  shadow-sm hover:shadow-green-300 hover:shadow-lg ">Services</a>
+          </li>
+          <li><a href="#products"
+              class="text-white text-lg pt-1 pb-2 px-3 rounded-full hover:bg-green-300 hover:bg-opacity-25  shadow-sm hover:shadow-green-300 hover:shadow-lg ">Products</a>
+          </li>
+          <li><a href="#contact"
+              class="text-white text-lg pt-1 pb-2 px-3 rounded-full hover:bg-green-300 hover:bg-opacity-25  shadow-sm hover:shadow-green-300 hover:shadow-lg ">Contact
+              Us</a></li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- hero -->
+    <section id="home" class="relative overflow-hidden text-white md:h-[65vh] mb-20 md:mb-56">
+      <video autoplay muted loop playsinline class="absolute top-0 left-0 w-full h-full object-cover z-[-1]">
+        <source src="hero.mp4" type="video/mp4">
+
+        Your browser does not support the video tag.
+      </video>
+      <div class="container mx-auto mt-36 text-center relative z-10 py-16">
+        <h1 class="text-4xl font-bold mb-4">Welcome to GVI Pharmacy</h1>
+        <p class="text-lg mb-8">Your health is our priority. Explore our range of services and products to find
+          what you
+          need.</p>
+        <a href="products.html" class="bg-green-500 text-white px-6 py-3 rounded-full hover:bg-green-600">Shop
+          Now</a>
+      </div>
+    </section>
+    <!-- Services -->
+    <section id="services" class="features py-16 blue-bg text-white md:mb-56 mb-20">
+      <div class="flex flex-col items-center justify-center">
+        <h2 class="text-4xl font-semibold mb-6">Services</h2>
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center p-5 md:p-0">
+          <div class="feature p-4 border rounded-lg shadow-md">
+            <h2 class="text-2xl font-semibold mb-2">Prescription Services</h2>
+            <p>Efficient and accurate prescription services.</p>
+            <span
+              class="flex items-center justify-center group hover:bg-gray-900 hover:bg-opacity-35 hover:cursor-pointer rounded-md"><img
+                src="prescripition.png" class="w-64 group-hover:scale-110 duration-300" />
+
+            </span>
+          </div>
+          <div class="feature p-4 border rounded-lg shadow-md">
+            <h2 class="text-2xl font-semibold mb-2">Consultation Services</h2>
+            <p>Expert advice from our licensed pharmacists.</p>
+            <span
+              class="flex items-center justify-center group hover:bg-gray-900 hover:bg-opacity-35 hover:cursor-pointer rounded-md"><img
+                src="consultation.png" class="w-64 group-hover:scale-110 duration-300" />
+
+            </span>
+          </div>
+          <div class="feature p-4 border rounded-lg shadow-md">
+            <h2 class="text-2xl font-semibold mb-2">Delivery Services</h2>
+            <p>Convenient delivery right to your door.</p>
+            <span
+              class="flex items-center justify-center group hover:bg-gray-900 hover:bg-opacity-35 hover:cursor-pointer rounded-md"><img
+                src="delivery.png" class="w-64 group-hover:scale-110 duration-300" />
+
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About US -->
+    <section id="aboutus" class="py-16 bg-gray-100 md:mb-56 mb-20 blue-bg flex flex-wrap items-center">
+
+      <div class="container mx-auto text-center w-full  md:pr-8 text-white">
+        <h2 class="text-3xl font-bold mb-4">About Us</h2>
+    
+          <p class=" text-sm p-5  text-justify mb-8">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque nemo nostrum assumenda quibusdam saepe
+            consectetur error tempore corporis obcaecati ipsum. Quisquam atque laudantium qui sint tempore. Harum maxime
+            quod aliquam. Eius culpa nostrum, porro sint nemo consequuntur accusamus deserunt dolore corrupti a
+            recusandae
+            consectetur sequi accusantium facere? Distinctio, asperiores molestiae! Nemo perspiciatis accusamus
+            veritatis
+            reprehenderit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis aperiam labore culpa
+            consequatur dolor sint consectetur dignissimos necessitatibus earum omnis facere quas vitae officiis
+            asperiores incidunt praesentium eos laudantium ut quo, dolore dolorum eligendi corporis ea corrupti. Placeat
+            in natus quasi nulla pariatur quis illo eaque neque soluta similique dolor molestiae fugit, quae quidem.
+            Ullam Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis magni nam non esse optio hic eos cupiditate! Quibusdam ullam soluta ducimus minima blanditiis harum pariatur, ex ratione neque facilis esse tempore aliquam nostrum hic dolorem adipisci repellat libero velit ut ipsa molestiae! Tempora cumque, exercitationem sint consequatur a excepturi magnam velit facilis laboriosam aspernatur tenetur blanditiis similique! Omnis voluptatibus, alias nemo ullam eum esse laudantium, deserunt ratione incidunt consequuntur sapiente, voluptatum corrupti blanditiis excepturi voluptates expedita eius iusto? Nobis ipsum repellat fugit, culpa tempora enim ab aliquid reiciendis natus? 
+
+          </p>
+        
+
+      </div>
+    </section>
+<!-- Contact -->
+    <section id="contact" class="py-16 bg-gray-100 mb-20 md:mb-56 blue-bg flex flex-wrap items-center ">
+       <!-- Contact form -->
+       <div class=" p-6 bg-transparent rounded-md shadow-2xl container mx-auto text-center w-full md:pr-8 text-white">
+        <h2 class="text-2xl font-semibold text-center mb-6">Contact Us</h2>
+        <form id="contact-form" action="#" method="POST">
+          <div class="mb-4">
+            <label for="name" class="block font-semibold mb-1 tracking-widest text-left">Name</label>
+            <input type="text" id="name" name="name" required placeholder="Enter your name"
+                   class="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-green-500 bg-transparent">
+          </div>
+          <div class="mb-4">
+            <label for="email" class="block font-semibold mb-1 tracking-widest text-left">Email</label>
+            <input type="email" id="email" name="email" required placeholder="Enter your email"
+                   class="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-green-500 bg-transparent">
+          </div>
+          <div class="mb-6">
+            <label for="message" class="block font-semibold mb-1 tracking-widest text-left">Message</label>
+            <textarea id="message" name="message" required placeholder="Enter your message"
+                      class="w-full px-4 py-2 border rounded-md resize-none h-32 focus:outline-none focus:border-green-500 bg-transparent"></textarea>
+          </div>
+          <button type="submit" class="w-full bg-green-500 text-white py-2 px-4 rounded-md hover:bg-green-600 focus:outline-none focus:bg-green-600 transition duration-300">
+            Submit
+          </button>
+        </form>
+      </div>
+    </section>
+
+
+
+  </main>
+
+  <footer class="bg-gray-800 text-white py-6">
+    <div class="container mx-auto text-center">
+      <p>&copy; 2024 GVI Pharmacy. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Add event listener to detect scroll events
+    // Add event listener to detect scroll events
+    window.addEventListener('scroll', function () {
+      // Get the scroll position
+      var scrollPosition = window.scrollY || window.pageYOffset;
+
+      // Define the threshold when to change the color
+      var threshold = 500; // Adjust this value as needed
+
+      // Get all the <li> elements
+      var navItems = document.querySelectorAll('.nav-item');
+
+      // Loop through each <li> element
+      navItems.forEach(function (item) {
+        // Check if the scroll position is greater than the threshold
+        if (scrollPosition > threshold) {
+          // Add the text-green-300 class
+          item.classList.add('nav-bg');
+        } else {
+          // Remove the text-green-300 class
+          item.classList.remove('nav-bg');
+        }
+      });
+    });
+
+    // *********************************************************************************************************************
+    document.getElementById('menu-toggle-sm').addEventListener('click', function () {
+      var menu = document.getElementById('menu-sm');
+      var menuIcon = document.getElementById('menu-icon-sm');
+
+      menu.classList.toggle('hidden');
+      menu.classList.toggle('transform');
+      menu.classList.toggle('translate-x-full');
+
+      if (!menu.classList.contains('hidden')) {
+        menuIcon.innerHTML = `
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                `;
+      } else {
+        menuIcon.innerHTML = `
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                `;
+      }
+    });
+  </script>
+
+</body>
+
+</html>
